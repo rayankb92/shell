@@ -1,0 +1,2 @@
+#!/bin/bash
+cat poeme | cut -c 1 | tr -d '\n' | paste -s
