@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod -R--preserve-root 755 /
+chmod chmod --preserve-root 755 ./
