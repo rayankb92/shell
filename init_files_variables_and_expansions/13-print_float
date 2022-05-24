@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%.2f \n" 2.3652683 | tr -d ' '
+printf "%.2f \n" $NUM | tr -d ' '
