@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#display 1-100 numbers add fizzbuzz when multiple of 3 and 5, display fizz when multiple of 3 displ#ay buzz when multiple of 5
+
+counter = 0
+while [ $counter -le 100 ]
+	do
+		((counter++))
+		if [ $counter -eq (($(1..10*3))) ]
+		then
+		echo "multiple de 3"
+		else
+		echo $counter
+		fi
+	done
