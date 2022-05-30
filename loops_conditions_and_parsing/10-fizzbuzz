@@ -4,7 +4,7 @@
 counter=0
 
 
-while [ $counter -le 100 ]
+while [ $counter -lt 100 ]
 	do
 	((counter++))
 	if ! ((counter%3)) && ! ((counter%5))
