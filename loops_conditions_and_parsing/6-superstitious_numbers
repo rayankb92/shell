@@ -12,7 +12,7 @@ do
 	case $counter in
 
 	4)
-	printf  "$counter\nbad luck for China\n"
+	printf  "$counter\nbad luck from China\n"
 	;;
 
 	9)
