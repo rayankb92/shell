@@ -2,18 +2,18 @@
 #
 
 counter=0
-mult3=0
-mult5=0
+
+
 while [ $counter -le 100 ]
 	do
 	((counter++))
-	if ! (($counter%3)) && ! (($counter%5))
+	if ! ((counter%3)) && ! ((counter%5))
 	then
 		echo fizzbuzz
-	elif ! (($counter%3))
+	elif ! ((counter%3))
 	then
 	echo fizz
-	elif ! (($counter%5))
+	elif ! ((counter%5))
 	then
 		echo buzz
 	else
