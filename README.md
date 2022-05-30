@@ -1,1 +1,1 @@
-readme
+bash script, loops and conditions
