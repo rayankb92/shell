@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+awk 'BEGIN{FS=" "} {print $1,$9}' apache-access.log |sort | uniq -dc | sort -nr -k1
+
