@@ -12,15 +12,15 @@ do
 	case $counter in
 
 	4)
-	printf  "$counter\nbad luck from China\n"
+	printf  "%s$counter\nbad luck from China\n"
 	;;
 
 	9)
-	printf  "$counter\nbad luck from Japan\n"
+	printf  "%s$counter\nbad luck from Japan\n"
 	;;
 
 	17)
-	printf  "$counter\nbad luck from Italy\n"
+	printf  "%s$counter\nbad luck from Italy\n"
 	;;
 
 	*)
