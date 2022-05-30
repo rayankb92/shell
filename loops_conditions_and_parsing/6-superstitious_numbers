@@ -12,19 +12,19 @@ do
 	case $counter in
 
 	4)
-	echo  "bad luck for China"
+	printf  "$counter\nbad luck for China\n"
 	;;
 
 	9)
-	echo bad luck from Japan
+	printf  "$counter\nbad luck from Japan\n"
 	;;
 
 	17)
-	echo bad luck from Italy
+	printf  "$counter\nbad luck from Italy\n"
 	;;
 
 	*)
-	echo "Best School"
+	echo $counter
 	;;
 esac
 	((counter++))
