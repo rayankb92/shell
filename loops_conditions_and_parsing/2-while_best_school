@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Display 10 times "Best School" with a while loop	
 counter=1
 while [ $counter -le 10 ]
 do
