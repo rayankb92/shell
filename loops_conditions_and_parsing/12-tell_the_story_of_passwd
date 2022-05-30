@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 #
-awk 'BEGIN{FS=" "} {print $1,$9}' apache-access.log
+while IFS=: read -r username password userid groupid userinfo homedir comshell
+do
+	echo "The user $username is part of the $groupid gang, lives in $homedir and rides $comshell. $userid's place is protected by the passcode $password, more info about the user here: $userinfo"
+done < $FILENAME
