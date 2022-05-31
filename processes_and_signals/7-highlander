@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#display infinitely string with a sleep 2 and display i am invicible when receving a SIGTERM
+function invicible()
+{
+	echo "I am invincible!!!"
+}
+while :;
+do
+	trap invicible SIGTERM
+
+		echo "To infinity and beyond"
+		sleep 2
+done
