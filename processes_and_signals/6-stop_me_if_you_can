@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # stop process without use kill or killall
-pkill -f "*"
+echo "ceci est un test"
+
