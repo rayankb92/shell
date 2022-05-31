@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+#search bash pid process
 ps -faux | grep "bash"
