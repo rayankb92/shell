@@ -11,6 +11,7 @@
 	elif [ "$1" == "stop" ]
 	then	
 		pkill -f "bash ./manage_my_process"
+		rm /tmp/my_process.pid
 		echo "manage_my_process sopped"
 	elif [ "$1" == "restart" ]
 	then
