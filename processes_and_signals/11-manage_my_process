@@ -5,7 +5,7 @@
 
 	if [ "$1" == "start" ]
 	then
-		sudo ./manage_my_process&
+		./manage_my_process&
 		echo $$ > /tmp/my_process.pid
 		echo manage_my_process started
 	elif [ "$1" == "stop" ]
@@ -15,8 +15,8 @@
 	elif [ "$1" == "restart" ]
 	then
                 pkill -f "bash ./manage_my_process"
-		sudo rm /tmp/my_process.pid
-		sudo ./manage_my_process&
+		rm /tmp/my_process.pid
+		./manage_my_process&
 		echo $$ > /tmp/my_process.pid
 		echo manage_my_process restarted
 	else
