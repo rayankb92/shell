@@ -22,7 +22,7 @@ do
         trap sigi SIGINT
 	trap "sigt; delete" SIGQUIT SIGTERM
         echo "To infinity and beyond"
-        sleep 2
+#        sleep 2
 done
         
         
