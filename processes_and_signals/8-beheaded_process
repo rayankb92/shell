@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#send a sigkill signal to kill the precedent exercice wich trap a sigterm signal
+pkill --signal SIGKILL -f "bash ./7-highlander"
