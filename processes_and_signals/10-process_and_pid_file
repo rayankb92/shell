@@ -13,7 +13,7 @@ function sigi(){
 
 function delete()
 {
-        rm /var/run/myscript.pid
+        sudo rm /var/run/myscript.pid
 	exit
 }
 while :;
