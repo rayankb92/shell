@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+#display its own PID
+
+echo $$ > /var/run/myscript.pid
+function sigt()
+{
+        echo "I hate the kill command"
+}
+
+function sigi(){
+        echo "Y U no love me?!"
+}
+
+function delete()
+{
+        rm /var/run/myscript.pid
+	exit
+}
+while :;
+do
+        trap sigt SIGTERM
+        trap sigi SIGINT
+	trap delete SIGQUIT SIGTERM
+        echo "To infinity and beyond"
+        sleep 2
+done
+        
+        
+
