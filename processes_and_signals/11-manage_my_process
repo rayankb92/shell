@@ -12,7 +12,7 @@
 	then	
 		pkill -f "bash ./manage_my_process"
 		rm /tmp/my_process.pid
-		echo "manage_my_process sopped"
+		echo "manage_my_process stopped"
 	elif [ "$1" == "restart" ]
 	then
                 pkill -f "bash ./manage_my_process"
